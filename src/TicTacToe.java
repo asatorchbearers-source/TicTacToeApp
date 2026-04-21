@@ -14,8 +14,8 @@ public class TicTacToe {
         char[][] board = new char[3][3];
 
         // 2. Initialize all cells with the '-' placeholder using nested loops
-        for (int i = 0; i < 3; i++) {         // Outer loop for rows
-            for (int j = 0; j < 3; j++) {     // Inner loop for columns
+        for (int i = 0; i < 3; i++) {         
+            for (int j = 0; j < 3; j++) {     
                 board[i][j] = '-';
             }
         }
@@ -26,10 +26,8 @@ public class TicTacToe {
         
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                // Print each cell followed by a space for readability
                 System.out.print(board[i][j] + " ");
             }
-            // Move to the next line after completing a row
             System.out.println();
         }
     }
